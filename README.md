@@ -19,5 +19,9 @@ Step 2: Partitioning the Disk
   - Finally, to format the root partition, this command was used: mkfs.ext4 /dev/root_partition
 
 Step 4: Mounting the File Systems
-  - 
+  - Command for mounting EFI system partition: mount /dev/root_partition /mnt
+  - Command for mounting swap partition: swapon /dev/swap_partition
+  - Command for mounting root partition: mount /dev/root_partition /mnt
+
+Step 5: 
 
