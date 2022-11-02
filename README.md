@@ -10,18 +10,24 @@ Step 1: Arch Linux Installation & Launch
 
 Step 2: Partitioning the Disk
   - List the disk using the command: fdisk -l
-  - My disk was assigned to /dev/sda , so I used this command to begin partitioning: fdisk /dev/sda
-  - I made three partitions: sda1 for the EFI system partition, sda2 for Linux swap, and sda3 for root
+  - My disk was assigned to /dev/sda , so I used this command to begin partitioning: gdisk /dev/sda
+  - I made three partitions: sda1 for the EFI system partition, sda2 for Linux swap, and sda3 for root. All of these used sizes recomended for partition tables.
  
  Step 3: Formatting Partitions: 
-  - In order to format the EFI system partition, I used this command: mkfs.fat -F 32 /dev/efi_system_partition
-  - To format the swap partition, I used this command: mkswap /dev/swap_partition
-  - Finally, to format the root partition, this command was used: mkfs.ext4 /dev/root_partition
+  - In order to format the EFI system partition, I used this command: mkfs.fat -F32 /dev/sda1
+  - To format the swap partition, I used this command: mkswap /dev/sda2
+  - Finally, to format the root partition, this command was used: mkfs.ext4 /dev/sda3
 
 Step 4: Mounting the File Systems
-  - Command for mounting EFI system partition: mount /dev/root_partition /mnt
+  - Command for mounting EFI system partition: mount /dev/sda3 /mnt
   - Command for mounting swap partition: swapon /dev/swap_partition
+  - Creating mount point: mkdir /mnt/efi
   - Command for mounting root partition: mount /dev/root_partition /mnt
 
-Step 5: 
+Step 5: Installing Essential Packages
+  - Verified the mirror servers using: cat /etc/pacman.d/mirrorlist
+  - Command used to install essential packages: pacstrap /mnt base linux linux-firmware nano openssh sudo
+  
+Step 6: Configure the System
+  - Command used to create file system: genfstab -U /mnt >> /mnt/etc/fstab
 
