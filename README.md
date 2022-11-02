@@ -32,10 +32,13 @@ Step 5: Installing Essential Packages
 Step 6: Configure the System
   - Command used to create file system: genfstab -U /mnt >> /mnt/etc/fstab
   - Command used to change root into new system: arch-chroot /mnt 
+  - Next step is to configure timezone
   - Command used to set timezone: ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
   - Command to create /etc/adjtime: hwclock --systohc
+  - Up next is configuring localization
   - I then uncommented the en_US.UTF-8 line in the locale.gen file and ran the following command to generate locales: locale-gen
   - I then created a configuration file for locale and set a LANG variable to en_US.UTF-8 inside of it
+  - Configuring network is next
   - 
 
 
