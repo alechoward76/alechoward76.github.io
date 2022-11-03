@@ -39,6 +39,7 @@ Step 6: Configure the System
   - I then uncommented the en_US.UTF-8 line in the locale.gen file and ran the following command to generate locales: locale-gen
   - I then created a configuration file for locale and set a LANG variable to en_US.UTF-8 inside of it
   - Configuring network is next
-  - 
+  - I created a hostname file inide of the etc directory and edited it to contain the hostname: pantera, after the popular groove-metal band
+  - To recreate the inframs image, I ran the following command: mkinitcpio -P , and then I changed root's password (to "a")
 
 
