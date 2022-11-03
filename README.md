@@ -42,4 +42,13 @@ Step 6: Configure the System
   - I created a hostname file inide of the etc directory and edited it to contain the hostname: pantera, after the popular groove-metal band
   - To recreate the inframs image, I ran the following command: mkinitcpio -P , and then I changed root's password (to "a")
 
+Step 7: Setup Boot Loader
+  - First, I had to install the grub and efibootmgr packages.
+  - I used the following command to install GRUB into my mount point: grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+  - Command used to create config file: grub-mkconfig -o /boot/grub/grub.cfg
+
+Step 8: Post-Installation
+  - I umounted and rebooted successfully, after doing this, I created a new user named alec, and set its password to Mountain1!
+  - 
+
 
