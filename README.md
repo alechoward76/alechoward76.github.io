@@ -47,6 +47,14 @@ Step 7: Setup Boot Loader
   - I used the following command to install GRUB into my mount point: grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
   - Command used to create config file: grub-mkconfig -o /boot/grub/grub.cfg
 
+Step 7.5: Fix Network
+  - I forgot to install network tools, so I installed the netctl, dhcpcd and dhcp packages
+  - I then edited the hosts file in the etc to include info for localhosts and my hostname
+  - I used : ip link to find my wireless adapter name which was: ens33
+  - I ran the following command to generate a network card: cp /etc/netctl/examples/ethernet-static /etc/netctl/ens33
+  - I then edited the file to assign ens33 as the interface
+  - Finally, I enabled my changes using the 2 following commands
+
 Step 8: Post-Installation
   - I umounted and rebooted successfully, after doing this, I created a new user named alec, and set its password to Mountain1!
   - 
