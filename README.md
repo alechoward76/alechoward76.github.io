@@ -59,9 +59,18 @@ Step 8: Post-Installation
   - I umounted and rebooted successfully, after doing this, I created a new user named alec, and set its password to Mountain1!
   - I then edited the visudo file using this command: EDITOR=nano visudo , to give alec sudo permissions by adding the following line: alec ALL=(ALL) ALL
   - I chose to install fish as my second shell, as from what I could find online, it is more user-friendly. Since I am unfamiliar with fish, I decided to only configure it as an interactive shell.
-  - I then edited the .bashrc file to contain "exec fish"
   - I had already installed ssh and was able to ssh into my VM: 
 
 ![SSH SC](docs/assets/SSH_TEST.JPG)
+
+  - fish already has color coding, however I edited /etc/bash.bashrc to use some of my custom aliases from my wsl terminal in bash, giving me a red prompt with the date and time, and creating the 'll' shortcut for 'ls -alF': 
+    
+    #Custom prompt line
+    export PS1="\e[0;31m[[\d \t] \u@\h \W]\$ \e[m "
+
+    # some more ls aliases
+    alias ll='ls -alF'
+   
+  - 
 
 
