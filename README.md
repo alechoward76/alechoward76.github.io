@@ -63,13 +63,15 @@ Step 8: Post-Installation
 
 ![SSH SC](docs/assets/SSH_TEST.JPG)
 
-  - fish already has color coding, however I edited /etc/bash.bashrc to use some of my custom aliases from my wsl terminal in bash, giving me a red prompt with the date and time, and creating the 'll' shortcut for 'ls -alF': 
+  - fish already has color coding, however I edited /etc/bash.bashrc to use some of my custom settings from my wsl terminal in bash, giving me a red prompt with the date and time, and creating some other helpful aliases: 
     
     #Custom prompt line
     export PS1="\e[0;31m[[\d \t] \u@\h \W]\$ \e[m "
 
     # some more ls aliases
     alias ll='ls -alF'
+    alias la='ls -A'
+    alias l='ls -CF'
    
   - 
 
