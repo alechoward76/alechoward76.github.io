@@ -78,5 +78,6 @@ Step 8: Post-Installation
   - First, I installed the lxde and lxdm packages, and then i ran the following command to enable the manager: systemctl enable lxdm
   - Then I created the .xinitrc file and write "exec startlxde" so that it would boot on start
   - With my desktop set up, the last thing I did was install firefox so I could choose a new wallpaper off of the internet: 
-
+![SSH SC](docs/assets/Log_Page.JPG)
+![SSH SC](docs/assets/Beans.JPG)
 
