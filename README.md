@@ -62,6 +62,6 @@ Step 8: Post-Installation
   - I then edited the .bashrc file to contain "exec fish"
   - I had already installed ssh and was able to ssh into my VM: 
 
-![SSH SC](alechoward76.github.io/docs/assets/SSH_TEST.JPG)
+![SSH SC](docs/assets/SSH_TEST.JPG)
 
 
