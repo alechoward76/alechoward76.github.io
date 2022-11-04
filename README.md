@@ -60,6 +60,8 @@ Step 8: Post-Installation
   - I then edited the visudo file using this command: EDITOR=nano visudo , to give alec sudo permissions by adding the following line: alec ALL=(ALL) ALL
   - I chose to install fish as my second shell, as from what I could find online, it is more user-friendly. Since I am unfamiliar with fish, I decided to only configure it as an interactive shell.
   - I then edited the .bashrc file to contain "exec fish"
-  - I had already installed ssh and was able to ssh into
+  - I had already installed ssh and was able to ssh into my VM: 
+
+![SSH SC](alechoward76.github.io/docs/assets/SSH_TEST.JPG)
 
 
