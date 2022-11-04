@@ -57,6 +57,9 @@ Step 7.5: Fix Network
 
 Step 8: Post-Installation
   - I umounted and rebooted successfully, after doing this, I created a new user named alec, and set its password to Mountain1!
-  - 
+  - I then edited the visudo file using this command: EDITOR=nano visudo , to give alec sudo permissions by adding the following line: alec ALL=(ALL) ALL
+  - I chose to install fish as my second shell, as from what I could find online, it is more user-friendly. Since I am unfamiliar with fish, I decided to only configure it as an interactive shell.
+  - I then edited the .bashrc file to contain "exec fish"
+  - I had already installed ssh and was able to ssh into
 
 
