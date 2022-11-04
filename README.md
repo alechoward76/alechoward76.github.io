@@ -67,16 +67,20 @@ Step 8: Post-Installation
   - fish already has color coding, however I edited /etc/bash.bashrc to use some of my custom settings from my wsl terminal in bash, giving me a red prompt with the date and time, and creating some other helpful aliases: 
     
     #Custom prompt line
+    
     export PS1="\e[0;31m[[\d \t] \u@\h \W]\$ \e[m "
 
-    # some more ls aliases
+    #some more ls aliases
+    
     alias ll='ls -alF'
+    
     alias la='ls -A'
+    
     alias l='ls -CF'
    
-  - My final step was to install a GUI desktop environment for which I chose LXDE for its simplicity. 
+  - My final step was to install a GUI desktop environment. I chose LXDE for its simplicity
   - First, I installed the lxde and lxdm packages, and then i ran the following command to enable the manager: systemctl enable lxdm
-  - Then I created the .xinitrc file and write "exec startlxde" so that it would boot on start
+  - I then created the .xinitrc file and write "exec startlxde" so that it would boot on start
   - With my desktop set up, the last thing I did was install firefox so I could choose a new wallpaper off of the internet: 
 ![SSH SC](docs/assets/Log_Page.JPG)
 ![SSH SC](docs/assets/BEANS.JPG)
