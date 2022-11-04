@@ -58,6 +58,7 @@ Step 7.5: Fix Network
 Step 8: Post-Installation
   - I umounted and rebooted successfully, after doing this, I created a new user named alec, and set its password to Mountain1!
   - I then edited the visudo file using this command: EDITOR=nano visudo , to give alec sudo permissions by adding the following line: alec ALL=(ALL) ALL
+  - I created another account for codi, giving him the same permissions as alec, and then set his password to 'GraceHopper1906' until it is changed on login with the following command: passwd -e codi
   - I chose to install fish as my second shell, as from what I could find online, it is more user-friendly. Since I am unfamiliar with fish, I decided to only configure it as an interactive shell.
   - I had already installed ssh and was able to ssh into my VM: 
 
@@ -73,6 +74,9 @@ Step 8: Post-Installation
     alias la='ls -A'
     alias l='ls -CF'
    
-  - 
+  - My final step was to install a GUI desktop environment for which I chose LXDE for its simplicity. 
+  - First, I installed the lxde and lxdm packages, and then i ran the following command to enable the manager: systemctl enable lxdm
+  - Then I created the .xinitrc file and write "exec startlxde" so that it would boot on start
+  - With my desktop set up, the last thing I did was install firefox so I could choose a new wallpaper off of the internet: 
 
 
