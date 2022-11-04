@@ -66,11 +66,11 @@ Step 8: Post-Installation
 
   - fish already has color coding, however I edited /etc/bash.bashrc to use some of my custom settings from my wsl terminal in bash, giving me a red prompt with the date and time, and creating some other helpful aliases: 
     
-    #Custom prompt line
+    Custom prompt line
     
     export PS1="\e[0;31m[[\d \t] \u@\h \W]\$ \e[m "
 
-    #some more ls aliases
+    some more ls aliases
     
     alias ll='ls -alF'
     
