@@ -8,5 +8,4 @@
   - I then ran the following command to create and run the containers: docker compose up -d
   - I then pasted this into my search engine to open wordpress: http://localhost:8000/
   - From here I created my site named "fiberopticfriday", with my username: alechoward4. I then logged in
-  - 
-  - 
+ 
