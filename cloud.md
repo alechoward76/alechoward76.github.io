@@ -11,4 +11,12 @@ Step 1: Install Docker on Droplet
    - Then I installed Docker Compose: sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o     /usr/local/bin/docker-compose
    - Finally, I just had to set proper execute permissions: sudo chmod +x /usr/local/bin/docker-compose
 
-
+Step 2: Install Wireguard on Droplet
+   - I created directories in the following path: ~/wireguard/config/
+   - Then, I created a docker-compose.yml file and edited it as seen below in this path: ~/wireguard/docker-compose.yml
+   INSERT PHOTO
+   - I navigated to the wireguard directory and used this command to start wireguard: docker-compose up -d
+   - I ran this command to generate a qr code to open a tunnel for my phone: docker-compose logs -f wireguard
+   INSERT PHOTO
+   - I copied the config file for pc1 and used it to open a tunnel on my  laptop for wireguard for Windows
+   INSERT PHOTOS
