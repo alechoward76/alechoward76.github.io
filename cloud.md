@@ -17,12 +17,13 @@ Step 2: Install Wireguard on Droplet
    ![SSH SC](docs/assets/docker_compose_yml.JPG)
    - I navigated to the wireguard directory and used this command to start wireguard: docker-compose up -d
    - I ran this command to generate a qr code to open a tunnel for my phone: docker-compose logs -f wireguard
+   ![SSH SC](docs/assets/PHONE.png)
   
   IP Without VPN: 
-   ![SSH SC](docs/assets/ip1.JPG)
+   ![SSH SC](docs/assets/phone_ip1.png)
    
    IP With VPN:
-   ![SSH SC](docs/assets/vpn_ip.JPG)
+   ![SSH SC](docs/assets/phone_ip2.png)
    
    - I copied the config file for pc1 and used it to open a tunnel on my  laptop for wireguard for Windows
   ![SSH SC](docs/assets/WIN_CONF_ACTIVE.JPG)
