@@ -12,6 +12,7 @@ Step 1: Install Docker on Droplet
    - Finally, I just had to set proper execute permissions: sudo chmod +x /usr/local/bin/docker-compose
 
 Step 2: Install Wireguard on Droplet
+   - I followed this guide for the Wireguard setup: https://thematrix.dev/setup-wireguard-vpn-server-with-docker/
    - I created directories in the following path: ~/wireguard/config/
    - Then, I created a docker-compose.yml file and edited it as seen below in this path: ~/wireguard/docker-compose.yml
    ![SSH SC](docs/assets/docker_compose_yml.JPG)
